@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src='external/jquery/jquery.js'></script>
+  <script src='jquery-validation-1.16.0/dist/jquery.validate.js'></script>
+  <link rel="stylesheet" type="text/css" href="./wrd_files/stilovi.css">
+  <title>WRD ispit</title>
+
+</head>
+<body> 
+
+  <div>
+    <form id="forma">
+        <label for="dostavaIme">Ime</label>
+        <input id="dostavaIme" name="ime" placeholder="kupac ime"/>
+
+        <label for="dostavaAdresa">Adresa</label>
+        <input id="dostavaAdresa" name="adresa" placeholder="kupac adresa"/>
+
+        <label for="dostavaPostanskiBroj">Poštanski broj</label>
+        <input id="dostavaPostanskiBroj" name="postanski" value=""/>
+
+        <label for="dostavaTelefon">Telefon</label>
+        <input id="dostavaTelefon" name="telefon" placeholder="+387-61-888-8888"/>
+
+        <label for="napomena">Napomena</label>
+        <textarea id="napomena" style="width: 100%" ></textarea>
+        <br/>
+        <input type="button" value="Dodaj kupca" onclick="Dodaj()"  />
+    </form>
+    <label for="filtiranje">Filtriraj podatke po imenu</label>
+    <input id="filtiranje" placeholder="upisi dio imena"/>
+    <table id="tabelaID"  style="width: 100%">
+      <thead>
+          <tr>
+              <th>Id Kupca</th>
+              <th>Datum</th>
+              <th>Ime</th>
+              <th>Adresa</th>
+              <th>Poštanski broj</th>
+              <th>Telefon</th>
+              <th>Napomena</th>
+          </tr>
+        </thead>
+        <tbody>
+         
+        </tbody>
+  </table>
+</div>
+
+<div>
+  <p>Copyright by FIT</p>
+</div>
+
+<script src="./wrd_files/script.js"></script>
+</body>
+</html>
+
